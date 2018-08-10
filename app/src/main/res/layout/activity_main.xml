@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="testeadapt3.cursoandroid2.com.passandodadosentreactivities.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tela Principal..."
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/editTextNomeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu nome:"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextEmailMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu email:"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/botaoMainEnviarTela1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eviar tela-1"
+            android:onClick="mainEnviarTela1"/>
+        <Button
+            android:id="@+id/botaoMainEviarTela2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enviar tela-2"
+            android:onClick="mainEnviarTela2"/>
+    </LinearLayout>
+
+</LinearLayout>
